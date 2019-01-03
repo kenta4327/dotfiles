@@ -1,18 +1,3 @@
-syntax enable
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-
-" タブ系
-:set tabstop=4
-:set autoindent
-:set expandtab
-:set shiftwidth=4
-:set softtabstop=4
-
-" 行番号を表示
-:set number
-
 "dein Scripts-----------------------------
 if &compatible
   set nocompatible               " Be iMproved
@@ -33,6 +18,7 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
   call dein#add('tpope/vim-endwise')
+  call dein#add('altercation/vim-colors-solarized')
 
   " Required:
   call dein#end()
@@ -49,4 +35,20 @@ if dein#check_install()
 endif
 
 "End dein Scripts-------------------------
+
+" カラースキーム
+syntax enable
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
+
+" タブ系
+:set tabstop=4
+:set autoindent
+:set expandtab
+:set shiftwidth=4
+:set softtabstop=4
+
+" 行番号を表示
+:set number
 
