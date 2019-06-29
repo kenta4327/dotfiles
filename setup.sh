@@ -1,7 +1,8 @@
 #!/bin/bash
 
-ln -s $HOME/dotfiles/.vimrc $HOME/.vimrc
-ln -s $HOME/dotfiles/.inputrc $HOME/.inputrc
-ln -s $HOME/dotfiles/.bashrc $HOME/.bashrc
+ln -s ~/dotfiles/.vimrc ~/.vimrc
+ln -s ~/dotfiles/.inputrc ~/.inputrc
+ln -s ~/dotfiles/.bashrc ~/.bashrc
 
-source $HOME/.bashrc
+source ~/.bashrc
+
