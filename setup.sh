@@ -1,8 +1,21 @@
-#!/bin/bash
+#!/bin/zsh
 
-ln -s ~/dotfiles/.vimrc ~/.vimrc
-ln -s ~/dotfiles/.inputrc ~/.inputrc
-ln -s ~/dotfiles/.bashrc ~/.bashrc
+if [ ! -e ~/.cache/dein ]; then
+    # ないときだけdein.vimインストール
+    mkdir -p ~/.cache/dein
+    curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > dein_installer.sh
+    sh ./dein_installer.sh ~/.cache/dein
+    rm dein_installer.sh
+fi
 
-source ~/.bashrc
+# 現在のディレクトリ
+THIS_DIR=$(cd $(dirname $0); pwd)
+
+ln -sf ${THIS_DIR}/.vimrc ~/.vimrc
+ln -sf ${THIS_DIR}/.inputrc ~/.inputrc
+ln -sf ${THIS_DIR}/.bashrc ~/.bashrc
+ln -sf ${THIS_DIR}/.zshrc ~/.zshrc
+
+bash ~/.bashrc
+zsh ~/.zshrc
 
