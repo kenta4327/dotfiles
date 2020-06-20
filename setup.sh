@@ -16,6 +16,8 @@ ln -sf ${THIS_DIR}/.inputrc ~/.inputrc
 ln -sf ${THIS_DIR}/.bashrc ~/.bashrc
 ln -sf ${THIS_DIR}/.zshrc ~/.zshrc
 
-bash ~/.bashrc
-zsh ~/.zshrc
+# bash ~/.bashrc
+# sh で起動しても zsh にする
+zsh
+source ~/.zshrc
 
