@@ -7,3 +7,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 alias gitlog='git log --pretty=format:"[%ad] %h %an : %s"'
 alias ls="ls -aFG"
 
+# cdの後にlsを実行
+chpwd() { ls -l }
+
