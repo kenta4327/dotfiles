@@ -5,5 +5,5 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # エイリアス
 alias gitlog='git log --pretty=format:"[%ad] %h %an : %s"'
-alias ls="ls -G"
+alias ls="ls -aFG"
 
