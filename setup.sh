@@ -14,7 +14,7 @@ THIS_DIR=$(cd $(dirname $0); pwd)
 ln -sf ${THIS_DIR}/.vimrc ~/.vimrc
 ln -sf ${THIS_DIR}/.zshrc ~/.zshrc
 
-# sh で起動しても zsh にする
+# sh で起動しても zsh にし、source を実施できるようにする
 zsh
 source ~/.zshrc
 
