@@ -13,3 +13,6 @@ alias ls="ls -aFG"
 # cdの後にlsを実行
 chpwd() { ls -l }
 
+# パス設定
+export PATH="/opt/homebrew/bin:$PATH"
+
